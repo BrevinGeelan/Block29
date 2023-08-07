@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import {Routes, Route, Link} from "react-router-dom"
 import './App.css'
 import AllPlayers from './components/AllPlayers'
-import SinglePlayer from './components/SinglePlayer'
 import NewPlayerForm from './components/NewPlayer'
 
 function App() {
