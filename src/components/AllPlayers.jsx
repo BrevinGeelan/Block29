@@ -19,12 +19,11 @@ const fetchPlayers = async () => {
 };
 fetchPlayers();
 }, []);
-console.log(players)
 return (
     <>
     <div>
         <h2>All Puppy Players</h2>
-        <div>
+        <div className="card-container">
      {players.map((player) => (
                 <PlayerCard key={player.id} player={player} />
         ))}

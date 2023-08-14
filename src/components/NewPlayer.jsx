@@ -36,9 +36,9 @@ export default function NewPlayerForm() {
             console.error(error)
         }
     };
-console.log(newPuppy)
+
     return (
-        <div>
+        <div className="new-form">
             <button onClick={() => setFormOpen(!FormOpen)}>New Player Form!</button>
             {FormOpen && (
                 <form onSubmit={handleSubmit}>
@@ -75,7 +75,7 @@ console.log(newPuppy)
                                 </td>
                             </tr>
                             <tr>
-                                <td>Status</td>
+                                <td>Status:</td>
                                 <td>
                                     <input
                                     type="text"
@@ -85,7 +85,7 @@ console.log(newPuppy)
                                 </td>
                             </tr>
                             <tr>
-                                <td>Team Id</td>
+                                <td>Team Id:</td>
                                 <td>
                                     <input 
                                     type="text"
@@ -95,7 +95,7 @@ console.log(newPuppy)
                                 </td>
                                 </tr>
                                 <tr>
-                                    <td>Picture!</td>
+                                    <td>Picture!:</td>
                                     <td>
                                     <input 
                                     type="text" 
